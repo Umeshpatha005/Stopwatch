@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Professional Stopwatch</title>
+
+  <!-- CSS File -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- LEFT -->
+    <div class="left">
+
+      <h5>TASK 02 | STOPWATCH</h5>
+
+      <h1>Professional Stopwatch</h1>
+
+      <p>
+        Start, pause, reset and record lap times with a clean
+        professional dashboard interface.
+      </p>
+
+      <div class="feature-box">
+
+        <div class="live">Live Timer</div>
+
+        <p>
+          Accurate stopwatch with millisecond precision using JavaScript.
+        </p>
+
+        <div class="buttons">
+
+          <button class="start" id="startBtn">
+            Start
+          </button>
+
+          <button class="pause" id="pauseBtn">
+            Pause
+          </button>
+
+          <button class="lap" id="lapBtn">
+            Lap
+          </button>
+
+          <button class="reset" id="resetBtn">
+            Reset
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- RIGHT -->
+    <div class="right">
+
+      <!-- TIMER -->
+      <div class="timer-box">
+
+        <h6>CURRENT TIME</h6>
+
+        <div class="time">
+          <span id="display">00:00:00</span>
+          <span class="milliseconds" id="ms">.000</span>
+        </div>
+
+      </div>
+
+      <!-- LAP HISTORY -->
+      <div class="lap-box">
+
+        <div class="lap-header">
+
+          <h3>Lap History</h3>
+
+          <div class="badge" id="lapCount">
+            0 RECORDS
+          </div>
+
+        </div>
+
+        <div class="laps" id="laps">
+
+          <div class="empty">
+            No lap records yet.
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- JavaScript File -->
+  <script src="script.js"></script>
+
+</body>
+</html>
